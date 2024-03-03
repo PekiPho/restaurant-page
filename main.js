@@ -1,1 +1,1 @@
-console.log("hello world");
+document.querySelector("Home"),document.querySelector("About"),document.querySelector("Reservations"),document.querySelector("Events");
