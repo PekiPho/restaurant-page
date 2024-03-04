@@ -76,6 +76,11 @@ nav{
     margin-bottom: 3%;
     text-align: center;
 }
+.icon{
+    mix-blend-mode: multiply;
+    width:25px;
+    height:25px;
+}
 
 
 @keyframes nav-load{
