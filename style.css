@@ -3,6 +3,10 @@
     padding:0;
     background-color: #fafbee;
 }
+@font-face {
+    font-family: 'Poppins';
+    src: url('../assets/Poppins-Regular.woff2') format('woff2');
+}
 
 li{
     all:unset;
@@ -23,14 +27,92 @@ button{
     font-size: 28px;
     color:#0a0a0a;
 }
+h1{
+    height:10vh;
+    width: 100vw;
+    font-size:36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins';
+    text-shadow: 2px 2px 8px #ffe3ad;
+
+    animation:nav-load 1s ease-in,
+                chgsize 1s;
+}
+nav{
+    animation:nav-load 1s ease-in;
+}
 #content{
-    height:85vh;
+    height:75vh;
     width:100vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../assets/bread2.jpg');
+    background-size: cover;
+    animation: img-load 800ms ease;
 }
 .one:hover{
     transform: scale(1.1);
     transition: all .12s ease-in;
     filter: drop-shadow(2px 2px 5px #ffe3ad);
+}
+.container{
+    width:30vw;
+    height:50vh;
+    padding:2%;
+    border-radius: 20px;
+    border:1px solid black;
+
+    background-color: #6c9a8b;
+    opacity: 0.9;
+    animation: img-load 500ms ease-out;
+}
+.homep{
+    all:unset;
+    font-size: 16px;
+    font-family: 'Poppins';
+    margin-bottom: 3%;
+    text-align: center;
+}
+
+
+@keyframes nav-load{
+    0%{
+        transform: translateY(-40%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+@keyframes img-load{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes chgsize{
+    0%{
+        transform: scale(0);
+    }
+    50%{
+        transform: scale(1.5);
+    }
+}
+@media(max-width:1320px){
+    .container{
+        width:35vw;
+        height:55vh;
+    }
+}
+@media(max-width:1200px){
+    .container{
+        width:40vw;
+        height: 55vh;
+    }
 }
 
 /*
