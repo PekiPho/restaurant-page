@@ -1,4 +1,7 @@
+import clear from "../index.js";
+
 export default function generateReserve(){
+    clear();
     let ReservationBtn=document.querySelector('.Reservations');
     ReservationBtn.disabled=true;
     let content=document.querySelector('#content');

@@ -1,4 +1,7 @@
+import clear from "..";
+
 export default function generateHome(){
+    clear();
     let HomeBtn=document.querySelector('.Home');
     HomeBtn.disabled=true;
     let content=document.querySelector('#content');
