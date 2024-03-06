@@ -22,7 +22,7 @@ ul{
     position: relative;
     z-index: 1;
 }
-button{
+li>button{
     all:unset;
     font-size: 28px;
     color:#0a0a0a;
@@ -42,6 +42,19 @@ h1{
 }
 nav{
     animation:nav-load 1s ease-in;
+}
+textarea{
+    all:unset;
+    opacity:0.97;
+    background-color: #fafbee;
+    border:1px solid black;
+    border-radius: 5px;
+    width: 20vw;
+    height:20vh;
+    word-wrap: break-word;
+    padding:4px;
+    font-size:18px;
+    margin-bottom: 15px;
 }
 #content{
     height:75vh;
@@ -95,6 +108,26 @@ nav{
     all:unset;
     font-size: 16px;
     font-family: 'Poppins';
+}
+.flexy{
+    display: flex;
+    flex-direction: column;
+}
+.submit{
+    all:unset;
+    background-color: #507469;
+    font-family: 'Poppins';
+    color:#fafbee;
+    font-size: 24px;
+    padding:5px;
+    border-radius: 10px;
+    border: 1px solid black;
+    width:100px;
+    text-align: center;
+}
+.submit:hover{
+    transform: scale(1.1);
+    border-width: 2px;
 }
 
 

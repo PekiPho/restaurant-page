@@ -5,11 +5,13 @@ export default function generateReserve(){
     let container=document.createElement("div");
     container.classList.add('container');
     let containerInput=document.createElement('div');
-    containerInput.classList.add('container-input');
-    let inputs=document.createElement('input');
-
+    container.classList.add('container-input','flexy');
+    let inputs=document.createElement('textarea');
     let image= new Array(2);
     let box=new Array(2);
+    let submitBtn=document.createElement('button');
+    submitBtn.classList.add('submit');
+    submitBtn.textContent='Submit';
 
     let phoneTxt=document.createElement('p');
     phoneTxt.classList.add('restxt');
@@ -18,6 +20,7 @@ export default function generateReserve(){
     let mapTxt=document.createElement('p');
     mapTxt.classList.add('restxt');
     mapTxt.textContent='Your Location';
+
     for(let i=0;i<2;i++)
     {
         image[i]=document.createElement('img');
@@ -36,6 +39,11 @@ export default function generateReserve(){
     container.appendChild(box[0]);
     container.appendChild(box[1]);
     container.appendChild(inputs);
+    container.appendChild(submitBtn);
 
     content.appendChild(container);
+
+    submitBtn.addEventListener('click',()=>{
+        inputs.value="";
+    });
 }
