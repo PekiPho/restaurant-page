@@ -74,12 +74,27 @@ nav{
     font-size: 16px;
     font-family: 'Poppins';
     margin-bottom: 3%;
-    text-align: center;
 }
 .icon{
     mix-blend-mode: multiply;
-    width:25px;
-    height:25px;
+    width:35px;
+    height:35px;
+}
+.box{
+    background-color: inherit;
+    height:8vh;
+}
+.box:nth-child(2){
+    margin-bottom: 4vh;
+}
+.flex-lay{
+    display: flex;
+    align-items: center;
+}
+.restxt{
+    all:unset;
+    font-size: 16px;
+    font-family: 'Poppins';
 }
 
 
