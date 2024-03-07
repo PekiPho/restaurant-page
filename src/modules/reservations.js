@@ -6,10 +6,9 @@ export default function generateReserve(){
     ReservationBtn.disabled=true;
     let content=document.querySelector('#content');
     let container=document.createElement("div");
-    container.classList.add('container');
-    let containerInput=document.createElement('div');
-    container.classList.add('container-input','flexy');
+    container.classList.add('container','flexy');
     let inputs=document.createElement('textarea');
+    inputs.placeholder='Reservation description';
     let image= new Array(2);
     let box=new Array(2);
     let submitBtn=document.createElement('button');
