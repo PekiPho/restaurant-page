@@ -114,6 +114,7 @@ textarea{
 .flexy{
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 .submit{
     all:unset;
@@ -154,6 +155,16 @@ textarea{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.submitEvent{
+    all:unset;
+    position:absolute;
+    bottom:10%;
+    height: 60px;
+    font-family: 'Poppins';
+    font-size:18px;
+    color:#fafbee;
+    text-decoration: underline;
 }
 
 @keyframes nav-load{
