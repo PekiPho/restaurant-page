@@ -65,7 +65,7 @@ textarea{
     display:flex;
     justify-content: center;
     align-items: center;
-    background-image: url('../assets/bread2.jpg');
+    background-image: url('assets/bread2.jpg');
     background-size: cover;
     animation: img-load 800ms ease;
 }
